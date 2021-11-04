@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.0</PackageVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Title>C# reserved attributes with internal accessibility</Title>
+        <Description>A source code package of C# reserved attributes with internal accessibility such as SkipLocalsInit, ModuleInitializer, NRT Attribute and so on.</Description>
+        <PackageProjectUrl>https://github.com/ufcpp/InternalReservedAttributeGenerator</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/ufcpp/InternalReservedAttributeGenerator</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <Authors>ufcpp</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="**/*.cs" PackagePath="contentFiles\cs\netstandard2.0\" BuildAction="Compile" />
+        <Content Include=".nuget/_._" PackagePath="contentFiles\cs\net5.0\" BuildAction="None" />
+    </ItemGroup>
+
+</Project>
