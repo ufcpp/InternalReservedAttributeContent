@@ -8,12 +8,13 @@
         <DevelopmentDependency>true</DevelopmentDependency>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>2.0.0</PackageVersion>
     </PropertyGroup>
 
     <PropertyGroup>
         <Title>C# reserved attributes with internal accessibility</Title>
         <Description>A source code package of C# reserved attributes with internal accessibility such as SkipLocalsInit, ModuleInitializer, NRT Attribute and so on.</Description>
+        <PackageReleaseNotes>Added attributes for C# 10 and 11</PackageReleaseNotes>
         <PackageProjectUrl>https://github.com/ufcpp/InternalReservedAttributeContent</PackageProjectUrl>
         <RepositoryType>git</RepositoryType>
         <Authors>ufcpp</Authors>
