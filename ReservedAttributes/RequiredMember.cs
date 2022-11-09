@@ -7,10 +7,7 @@ namespace System.Diagnostics.CodeAnalysis
 namespace System.Runtime.CompilerServices
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Struct, AllowMultiple = false, Inherited = false)]
-    internal sealed class RequiredMemberAttribute : Attribute
-    {
-        public RequiredMemberAttribute() { }
-    }
+    internal sealed class RequiredMemberAttribute : Attribute { }
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = false)]
     internal sealed class CompilerFeatureRequiredAttribute : Attribute
     {
